@@ -1,4 +1,4 @@
-export function Btn_primary({ text, color = "green", size }) {
+function Btn_primary({ text, color = "green", size }) {
   return (
     <button
       style={{
@@ -10,3 +10,5 @@ export function Btn_primary({ text, color = "green", size }) {
     </button>
   );
 }
+
+export default Btn_primary;
