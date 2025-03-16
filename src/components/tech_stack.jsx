@@ -10,24 +10,59 @@ const TechStack = () => {
     <div className="tech-div">
       <h1 className="tech-h1">Tech Stack</h1>
       <ul className="tech-ul">
-        <li className="tech-li-items">
-          <img className="tech-img" src={csharp} alt="C#" />
-        </li>
-        <li className="tech-li-items">
-          <img className="tech-img" src={js} alt="Javascript" />
-        </li>
-        <li className="tech-li-items">
-          <img className="tech-img" src={react} alt="React" />
-        </li>
-        <li className="tech-li-items">
-          <img className="tech-img" src={python} alt="Python" />
-        </li>
-        <li className="tech-li-items">
-          <img className="tech-img" src={sql} alt="Sql" />
-        </li>
-        <li className="tech-li-items">
-          <img className="tech-img" src={git} alt="Git" />
-        </li>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img
+              id="csharp-img"
+              className="tech-img"
+              src={csharp}
+              alt="C#"
+              title="C#"
+            />
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img
+              id="js-img"
+              className="tech-img"
+              src={js}
+              alt="Javascript"
+              title="Javascript"
+            />
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img className="tech-img" src={react} alt="React" title="React" />
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img
+              className="tech-img"
+              src={python}
+              alt="Python"
+              title="Python"
+            />
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img
+              id="sql-img"
+              className="tech-img"
+              src={sql}
+              alt="Sql"
+              title="Sql"
+            />
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <img className="tech-img" src={git} alt="Git" title="Git" />
+          </li>
+        </div>
       </ul>
     </div>
   );
