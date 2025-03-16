@@ -1,0 +1,16 @@
+.about-me-container {
+  display: flex;
+  margin: 10rem 0 0 25rem;
+}
+
+.about-me-container h1 {
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+.about-me-left-cont p {
+  margin-top: 4rem;
+  line-height: 3rem;
+  font-size: 2.3rem;
+  font-weight: 300;
+}

@@ -8,7 +8,7 @@
 .tech-h1 {
   margin: 15rem 0 1rem 0;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .tech-ul {
@@ -19,8 +19,8 @@
 }
 
 .tech-li-container {
-  width: 5rem;
-  height: 5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 1rem;
   margin: 0 0.1rem;
   background-color: #282828;
@@ -38,24 +38,24 @@
 }
 
 .tech-img {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
 }
 
 #csharp-img {
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
 }
 
 #sql-img {
-  width: 5rem;
-  height: 5rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 #js-img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .tech-img:hover {
