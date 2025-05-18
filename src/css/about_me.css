@@ -1,16 +1,23 @@
 .about-me-container {
   display: flex;
-  margin: 10rem 0 0 25rem;
+  justify-content: center;
+  align-items: start;
+  margin: 10rem 10rem 0 10rem;
 }
 
 .about-me-container h1 {
+  margin-left: 4rem;
   font-weight: 400;
   font-size: 5rem;
 }
 
-.about-me-left-cont p {
+.about-me-right-cont p {
   margin-top: 4rem;
+  margin-left: 4rem;
   line-height: 3rem;
   font-size: 2.3rem;
   font-weight: 300;
+}
+
+.about-me-left-cont {
 }

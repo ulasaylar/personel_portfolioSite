@@ -1,7 +1,20 @@
+import Avatar from "@mui/material/Avatar";
+import icon from "../img/icon4.jpg";
+
 const About_me = () => {
   return (
     <div className="about-me-container">
       <div className="about-me-left-cont">
+        <Avatar
+          alt="Ulaş Aylar"
+          src={icon}
+          sx={{ width: 200, height: 200, bgcolor: "#e8e8e8" }}
+          imgProps={{
+            style: { transform: "scale(1.07)" },
+          }}
+        />
+      </div>
+      <div className="about-me-right-cont">
         <h1>
           Hi! I'm Ulaş <br></br> Thank you for visiting my website!
         </h1>
