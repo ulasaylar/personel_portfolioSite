@@ -1,5 +1,5 @@
 import Avatar from "@mui/material/Avatar";
-import icon from "../img/icon4.jpg";
+import icon from "../img/icon.jpg";
 
 const About_me = () => {
   return (
