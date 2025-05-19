@@ -1,0 +1,15 @@
+.main-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.chip-cont {
+  display: flex;
+}
+
+.chip-items {
+  padding: 0 0.5rem;
+}

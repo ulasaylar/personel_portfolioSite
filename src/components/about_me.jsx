@@ -8,7 +8,12 @@ const About_me = () => {
         <Avatar
           alt="Ulaş Aylar"
           src={icon}
-          sx={{ width: 200, height: 200, bgcolor: "#e8e8e8" }}
+          sx={{
+            width: 200,
+            height: 200,
+            bgcolor: "#e8e8e8",
+            border: "4px solid #FE7743",
+          }}
           imgProps={{
             style: { transform: "scale(1.07)" },
           }}

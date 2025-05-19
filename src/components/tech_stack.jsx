@@ -4,6 +4,21 @@ import git from "../img/git.png";
 import sql from "../img/sql.png";
 import python from "../img/python.png";
 import react from "../img/react.png";
+import php from "../img/php.png";
+import java from "../img/java.png";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
+
+const LightTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 20,
+  },
+}));
 
 const TechStack = () => {
   return (
@@ -12,55 +27,58 @@ const TechStack = () => {
       <ul className="tech-ul">
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img
-              id="csharp-img"
-              className="tech-img"
-              src={csharp}
-              alt="C#"
-              title="C#"
-            />
+            <LightTooltip title="C#">
+              <img id="csharp-img" className="tech-img" src={csharp} alt="C#" />
+            </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img
-              id="js-img"
-              className="tech-img"
-              src={js}
-              alt="Javascript"
-              title="Javascript"
-            />
+            <LightTooltip title="Javascript">
+              <img id="js-img" className="tech-img" src={js} alt="Javascript" />
+            </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img className="tech-img" src={react} alt="React" title="React" />
+            <LightTooltip title="React">
+              <img className="tech-img" src={react} alt="React" />
+            </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img
-              className="tech-img"
-              src={python}
-              alt="Python"
-              title="Python"
-            />
+            <LightTooltip title="Python">
+              <img className="tech-img" src={python} alt="Python" />
+            </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img
-              id="sql-img"
-              className="tech-img"
-              src={sql}
-              alt="Sql"
-              title="Sql"
-            />
+            <LightTooltip title="Java">
+              <img className="tech-img" src={java} alt="Java" />
+            </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <img className="tech-img" src={git} alt="Git" title="Git" />
+            <LightTooltip title="Php">
+              <img className="tech-img" src={php} alt="Php" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="Sql">
+              <img id="sql-img" className="tech-img" src={sql} alt="Sql" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="Git">
+              <img className="tech-img" src={git} alt="Git" />
+            </LightTooltip>
           </li>
         </div>
       </ul>
