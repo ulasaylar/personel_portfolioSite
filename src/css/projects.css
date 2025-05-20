@@ -15,11 +15,53 @@
 
 .projects-desc-cont span {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #fe7743;
 }
 
 .projects-desc-cont p {
   font-size: 2rem;
+  font-weight: 400;
+}
+
+.gradient-divider {
+  width: 50vw;
+  height: 2px;
+  margin: 10rem auto 5rem auto;
+  background: linear-gradient(to right, #ccc, #999, #ccc);
+  border-radius: 4px;
+}
+
+.projects-title {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: -4rem;
+  color: #ffd700;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-tech {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border-bottom: 1px solid #fff;
+  width: 40vw;
+}
+
+.projects-tech img {
+  width: 2vw;
+}
+
+.projects-tech-text {
+  font-size: 2rem;
   font-weight: 600;
+}
+
+.tech {
+  font-size: 3rem;
+  font-family: "Orbitron";
+  letter-spacing: 0.5px;
+  padding: 0;
+  color: #ffd700;
 }

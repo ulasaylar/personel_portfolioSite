@@ -9,7 +9,7 @@ const nav = () => {
           <a href="#">Tech Stack</a>
         </li>
         <li className="nav-ul-li-items">
-          <a href="#">My Projects</a>
+          <a href="#projects-banner">My Projects</a>
         </li>
       </ul>
     </div>

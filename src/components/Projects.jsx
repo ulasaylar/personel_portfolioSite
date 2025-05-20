@@ -1,15 +1,28 @@
 import React from "react";
+import Chip from "@mui/material/Chip";
 import customerlogin from "../img/projects/customerlogin.png";
 import adminlogin from "../img/projects/adminlogin.png";
+import customerpanel from "../img/projects/customerpanel.png";
+import adminpanel from "../img/projects/adminpanel.png";
+import editcustomers from "../img/projects/editcustomers.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import csharp from "../img/csharp.png";
+import js from "../img/js.png";
+import sql from "../img/sql.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { autocompleteClasses } from "@mui/material";
 
 function App() {
   return (
     <>
+      <div className="gradient-divider"></div>
+      <div className="projects-title" id="projects-banner">
+        PROJECTS
+      </div>
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
@@ -22,6 +35,43 @@ function App() {
             The system is developed using C# and works dynamically with a SQL
             Server database connection.
           </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">🚀 Tech Stack :</span>
+          <img src={csharp} alt="C#" />
+          <span className="projects-tech-text">C# ,</span>
+          <img src={sql} alt="SQL Server" />
+          <span className="projects-tech-text">SQL</span>
+          <div style={{ marginLeft: "31rem" }}>
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/e_CommercePanel",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -40,10 +90,16 @@ function App() {
           slidesPerView={1}
         >
           <SwiperSlide>
-            <img src={customerlogin} alt="Slide 1" style={imgStyle} />
+            <img src={customerlogin} alt="Slide 2" style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={adminlogin} alt="Slide 2" style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={customerpanel} alt="Slide 2" style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adminpanel} alt="Slide 2" style={imgStyle} />
           </SwiperSlide>
         </Swiper>
         <style>{`
