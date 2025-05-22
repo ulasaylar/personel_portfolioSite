@@ -19,6 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import csharp from "../img/csharp.png";
 import react from "../img/react.png";
+import js from "../img/js.png";
 import sql from "../img/sql.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "swiper/css";
@@ -192,9 +193,11 @@ function App() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="projects-tech">
           <span className="tech">🚀 Tech Stack :</span>
-          <img src={react} alt="C#" />
+          <img src={react} alt="React" />
           <span className="projects-tech-text"> React</span>
-          <div style={{ marginLeft: "37rem" }}>
+          <img src={js} alt="JavaScript" />
+          <span className="projects-tech-text"> JavaScript</span>
+          <div style={{ marginLeft: "24rem" }}>
             <Chip
               icon={<GitHubIcon color="white" />}
               clickable
