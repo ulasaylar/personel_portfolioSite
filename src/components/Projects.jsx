@@ -37,6 +37,7 @@ function App() {
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
+            <p className="projects-header-text">Desktop App</p>
             <span>Project Name :</span>
             <br></br> E-Commerce Management Panel <br></br>
             <span>Project Purpose :</span>
@@ -179,6 +180,7 @@ function App() {
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
+            <p className="projects-header-text">Website App</p>
             <span>Project Name :</span>
             <br></br> E-Commerce Site <br></br>
             <span>Project Purpose :</span>
