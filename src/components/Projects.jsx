@@ -5,6 +5,13 @@ import adminlogin from "../img/projects/adminlogin.png";
 import customerpanel from "../img/projects/customerpanel.png";
 import adminpanel from "../img/projects/adminpanel.png";
 import editcustomers from "../img/projects/editcustomers.png";
+import discounts from "../img/projects/discounts.png";
+import previews from "../img/projects/previews.png";
+import products from "../img/projects/products.png";
+import register from "../img/projects/register.png";
+import orders from "../img/projects/orders.png";
+import orderhistory from "../img/projects/orderhistory.png";
+import sql1 from "../img/projects/sql1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import csharp from "../img/csharp.png";
@@ -90,16 +97,40 @@ function App() {
           slidesPerView={1}
         >
           <SwiperSlide>
-            <img src={customerlogin} alt="Slide 2" style={imgStyle} />
+            <img src={customerlogin} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={adminlogin} alt="Slide 2" style={imgStyle} />
+            <img src={adminlogin} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={customerpanel} alt="Slide 2" style={imgStyle} />
+            <img src={customerpanel} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={adminpanel} alt="Slide 2" style={imgStyle} />
+            <img src={adminpanel} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={editcustomers} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={discounts} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={previews} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={products} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={register} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={orders} alt="Slide 2" style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={orderhistory} alt="Slide 2" style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sql1} style={imgStyle} />
           </SwiperSlide>
         </Swiper>
         <style>{`
