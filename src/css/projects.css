@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.projects-desc-cont span {
+.projects-desc-cont span:not([class]) {
   font-size: 3rem;
   font-weight: 700;
   color: #fe7743;

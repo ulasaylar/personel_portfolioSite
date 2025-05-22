@@ -37,7 +37,8 @@ function App() {
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
-            <p className="projects-header-text">Desktop App</p>
+            <span className="projects-header-text">Desktop App</span>
+            <br></br>
             <span>Project Name :</span>
             <br></br> E-Commerce Management Panel <br></br>
             <span>Project Purpose :</span>
@@ -56,7 +57,10 @@ function App() {
           <span className="projects-tech-text">C# ,</span>
           <img src={sql} alt="SQL Server" />
           <span className="projects-tech-text">SQL</span>
-          <div style={{ marginLeft: "31rem" }}>
+          <div
+            className="responsive-project-chip"
+            style={{ marginLeft: "31rem" }}
+          >
             <Chip
               icon={<GitHubIcon color="white" />}
               clickable
@@ -87,6 +91,7 @@ function App() {
         </div>
       </div>
       <div
+        className="responsive-project-swiper-cont"
         style={{
           width: "50vw",
           margin: "50px auto",
@@ -180,7 +185,8 @@ function App() {
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
-            <p className="projects-header-text">Website App</p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
             <span>Project Name :</span>
             <br></br> E-Commerce Site <br></br>
             <span>Project Purpose :</span>
@@ -196,10 +202,13 @@ function App() {
         <div className="projects-tech">
           <span className="tech">🚀 Tech Stack :</span>
           <img src={react} alt="React" />
-          <span className="projects-tech-text"> React</span>
+          <span className="projects-tech-text"> React ,</span>
           <img src={js} alt="JavaScript" />
           <span className="projects-tech-text"> JavaScript</span>
-          <div style={{ marginLeft: "24rem" }}>
+          <div
+            className="responsive-project-chip"
+            style={{ marginLeft: "23rem" }}
+          >
             <Chip
               icon={<GitHubIcon color="white" />}
               clickable
@@ -230,6 +239,7 @@ function App() {
         </div>
       </div>
       <div
+        className="responsive-project-swiper-cont"
         style={{
           width: "50vw",
           margin: "50px auto",

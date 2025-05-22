@@ -5,6 +5,7 @@ import "./css/about_me.css";
 import "./css/particles.css";
 import "./css/comnav.css";
 import "./css/projects.css";
+import "./css/responsive.css";
 import Nav from "./components/Nav.jsx";
 import Tech_Stack from "./components/Tech_stack.jsx";
 import About_me from "./components/About_me.jsx";
