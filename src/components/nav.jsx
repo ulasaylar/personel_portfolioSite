@@ -3,13 +3,7 @@ const nav = () => {
     <div className="nav">
       <ul className="nav-ul">
         <li className="nav-ul-li-items">
-          <a href="#">About Me</a>
-        </li>
-        <li className="nav-ul-li-items">
-          <a href="#">Tech Stack</a>
-        </li>
-        <li className="nav-ul-li-items">
-          <a href="#projects-banner">My Projects</a>
+          <a href="#projects-banner">Click To Go Projects</a>
         </li>
       </ul>
     </div>
