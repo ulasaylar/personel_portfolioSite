@@ -7,6 +7,7 @@ import react from "../img/react.png";
 import php from "../img/php.png";
 import java from "../img/java.png";
 import nest from "../img/nest.png";
+import mongo from "../img/mongodb.png";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 
@@ -28,6 +29,27 @@ const TechStack = () => {
       <ul className="tech-ul">
         <div className="tech-li-container">
           <li className="tech-li-items">
+            <LightTooltip title="Nest.js">
+              <img className="tech-img" src={nest} alt="Nest.js" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="MongoDB">
+              <img className="tech-img" src={mongo} alt="MongoDB" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="React">
+              <img className="tech-img" src={react} alt="React" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
             <LightTooltip title="C#">
               <img id="csharp-img" className="tech-img" src={csharp} alt="C#" />
             </LightTooltip>
@@ -40,13 +62,7 @@ const TechStack = () => {
             </LightTooltip>
           </li>
         </div>
-        <div className="tech-li-container">
-          <li className="tech-li-items">
-            <LightTooltip title="React">
-              <img className="tech-img" src={react} alt="React" />
-            </LightTooltip>
-          </li>
-        </div>
+
         <div className="tech-li-container">
           <li className="tech-li-items">
             <LightTooltip title="Python">
@@ -79,13 +95,6 @@ const TechStack = () => {
           <li className="tech-li-items">
             <LightTooltip title="Git">
               <img className="tech-img" src={git} alt="Git" />
-            </LightTooltip>
-          </li>
-        </div>
-        <div className="tech-li-container">
-          <li className="tech-li-items">
-            <LightTooltip title="Nest.js">
-              <img className="tech-img" src={nest} alt="Nest.js" />
             </LightTooltip>
           </li>
         </div>
