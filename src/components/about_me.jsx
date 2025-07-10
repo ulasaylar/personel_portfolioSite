@@ -2,6 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import icon from "../img/icon.jpg";
 import BlurText from "./BlurText";
 import ShinyText from "./ShinyText";
+import { Margin } from "@mui/icons-material";
 
 const About_me = () => {
   return (

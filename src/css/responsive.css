@@ -32,18 +32,30 @@
     width: 100%;
   }
 
+  .about-me-right-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   .about-me-left-cont .MuiAvatar-root {
     width: 150px !important;
     height: 150px !important;
   }
 
-  .about-me-container h1 {
+  .revealed {
     margin-left: 0;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 3rem !important;
+    text-align: center !important;
   }
 
-  .about-me-right-cont p {
+  .revealed:nth-of-type(2) {
+    justify-content: center;
+  }
+
+  .shiny-text-spec {
     margin-left: 0;
     margin-top: 2rem;
     font-size: 2.2rem;
