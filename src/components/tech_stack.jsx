@@ -6,6 +6,7 @@ import python from "../img/python.png";
 import react from "../img/react.png";
 import php from "../img/php.png";
 import java from "../img/java.png";
+import nest from "../img/nest.png";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 
@@ -78,6 +79,13 @@ const TechStack = () => {
           <li className="tech-li-items">
             <LightTooltip title="Git">
               <img className="tech-img" src={git} alt="Git" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="Nest.js">
+              <img className="tech-img" src={nest} alt="Nest.js" />
             </LightTooltip>
           </li>
         </div>

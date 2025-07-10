@@ -1,0 +1,39 @@
+.shiny-text {
+  position: relative;
+  color: #ffffff80; /* Normalde biraz saydam beyaz yazı */
+  display: inline-block;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255, 255, 255, 1) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #ffffff80; /* Bu, parlamayan kısımdaki yazı rengini belirler */
+  animation: shine 3s linear infinite;
+}
+
+.shiny-text::before {
+  content: attr(data-text); /* Aynı metni tekrar eder */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff80; /* Alt yazı gölgesi gibi olur */
+  z-index: -1;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
