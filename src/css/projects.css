@@ -28,7 +28,7 @@
 .gradient-divider {
   width: 50vw;
   height: 2px;
-  margin: 4rem auto 5rem auto;
+  margin: 9rem auto 5rem auto;
   background: linear-gradient(to right, #ccc, #999, #ccc);
   border-radius: 4px;
 }

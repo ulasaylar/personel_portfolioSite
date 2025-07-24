@@ -1,8 +1,8 @@
 import Avatar from "@mui/material/Avatar";
 import icon from "../img/icon.jpg";
-import BlurText from "./BlurText";
 import ShinyText from "./ShinyText";
-import { Margin } from "@mui/icons-material";
+import CurvedText from "./CurvedText";
+import TextAnimation from "./TextAnimation";
 
 const About_me = () => {
   return (
@@ -23,24 +23,14 @@ const About_me = () => {
         />
       </div>
       <div className="about-me-right-cont">
-        <BlurText
-          text="Hi! I'm Ulaş"
-          animateBy="words"
-          direction="top"
-          delay={100}
-          stepDuration={0.5}
-          className="revealed"
-          style="justify-content: center"
-        />
-        <br></br>
-        <BlurText
-          text="Thank you for visiting my website!"
-          animateBy="words"
-          direction="top"
-          delay={100}
-          stepDuration={0.5}
-          className="revealed"
-        />
+        <TextAnimation></TextAnimation>
+        <CurvedText 
+          marqueeText="Thank you for visiting my website!"
+          speed={1}
+          curveAmount={0}
+          direction="left"
+          interactive={true}
+          className="custom-text-style"/>
         <br></br>
         <ShinyText
           text="This is a portfolio site that I’ve designed and built entirely myself."
