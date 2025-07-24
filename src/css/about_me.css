@@ -1,8 +1,10 @@
 .about-me-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin: 10rem 10rem 0 10rem;
+  text-align: center;
 }
 
 .about-me-container h1 {
@@ -16,7 +18,7 @@
   font-weight: 400 !important;
   font-size: 5rem !important;
   color: #fff !important;
-  margin-left: 3rem;
+  justify-content: center;
 }
 
 .shiny-text-spec {

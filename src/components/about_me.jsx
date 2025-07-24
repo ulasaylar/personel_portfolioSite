@@ -30,6 +30,7 @@ const About_me = () => {
           delay={100}
           stepDuration={0.5}
           className="revealed"
+          style="justify-content: center"
         />
         <br></br>
         <BlurText
