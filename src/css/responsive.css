@@ -142,7 +142,7 @@
   }
 
   .projects-tech-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .projects-title {
@@ -156,6 +156,7 @@
 
   .responsive-project-chip {
     margin-left: 0 !important;
+    margin-top: 2rem;
   }
 
   .swiper {
@@ -172,5 +173,9 @@
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
+  }
+  
+  .tech-children-cont-spec {
+    flex-direction: column;
   }
 }
