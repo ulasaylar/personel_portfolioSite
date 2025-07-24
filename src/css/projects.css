@@ -45,7 +45,7 @@
 
 .projects-tech {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-top: 2rem;
   width: 40vw;
 }
@@ -54,17 +54,34 @@
   width: 2vw;
 }
 
+.projects-img {
+  border-radius: 50%;
+}
+
 .projects-tech-text {
   font-size: 2rem;
   font-weight: 600;
+  padding: 0 1rem;
 }
 
 .tech {
   font-size: 3rem;
-  font-family: "Orbitron";
-  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   color: #ffd700;
+}
+
+.tech-children-cont-spec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-children-cont-child {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .projects-header-text {

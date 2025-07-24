@@ -19,9 +19,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import csharp from "../img/csharp.png";
 import react from "../img/react.png";
+import nest from "../img/nest.png";
+import mongo from "../img/mongodb.png";
 import js from "../img/js.png";
 import sql from "../img/sql.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import nest1 from "../img/projects/nestjs/1.png";
+import nest2 from "../img/projects/nestjs/2.png";
+import nest3 from "../img/projects/nestjs/3.png";
+import nest4 from "../img/projects/nestjs/4.png";
+import nest5 from "../img/projects/nestjs/5.png";
+import nest6 from "../img/projects/nestjs/6.png";
+import nest7 from "../img/projects/nestjs/7.png";
+import nest8 from "../img/projects/nestjs/8.png";
+import nest9 from "../img/projects/nestjs/9.png";
+import nest10 from "../img/projects/nestjs/10.png";
+import nest11 from "../img/projects/nestjs/11.png";
+import nest12 from "../img/projects/nestjs/12.png";
+import nest13 from "../img/projects/nestjs/mongo1.png";
+import nest14 from "../img/projects/nestjs/mongo2.png";
+import nest15 from "../img/projects/nestjs/mongo3.png";
+import nest16 from "../img/projects/nestjs/mongo4.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -34,6 +52,306 @@ function App() {
       <div className="projects-title" id="projects-banner">
         PROJECTS
       </div>
+      
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> Blog AI - Admin Dashboard Site <br></br>
+            <span>Project Purpose :</span>
+            <br></br> This project showcases a full-featured admin dashboard
+             that I developed using NestJS and MongoDB. 
+             The system supports both JWT-based authentication for API access 
+             and session-cookie-based login for admin users, ensuring flexible 
+             and secure access control.
+             The dashboard is designed to allow administrators to manage customers,
+             control subscription packages, and monitor data activity through a clean and responsive interface. With a modular and scalable backend architecture, it serves as the central management tool of the system,
+             enabling smooth administration and easy future expansion.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">🚀 Tech Stack :</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child">
+              <img src={nest} alt="Nest.js" className="projects-img"/>
+              <span className="projects-tech-text"> Nest.js</span>
+              <img src={mongo} alt="MongoDB" className="projects-img"/>
+              <span className="projects-tech-text"> MongoDB</span>
+            </div>
+            
+            <div
+            className="responsive-project-chip"
+            >
+          </div>
+          
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={nest1} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest2} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest3} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest4} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest5} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest6} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest7} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest8} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest9} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest10} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest11} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest12} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest13} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest14} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest15} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={nest16} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+      </style>
+
+      </div>
+
+      <div className="gradient-divider"></div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> E-Commerce Site <br></br>
+            <span>Project Purpose :</span>
+            <br></br> The purpose of this project is to develop a user-friendly
+            and visually appealing e-commerce website where users can browse,
+            and purchase various fashion and lifestyle products. The platform
+            aims to provide a seamless shopping experience with product details
+            and pricing information.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">🚀 Tech Stack :</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child">
+              <img src={react} alt="React" className="projects-img"/>
+              <span className="projects-tech-text"> React</span>
+              <img src={js} alt="JavaScript" className="projects-img"/>
+              <span className="projects-tech-text"> JavaScript</span>
+            </div>
+
+            <div
+            className="responsive-project-chip"
+            >
+          </div>
+
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/react_shoppingSite",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={mainsite} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={detail} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={basket} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+  .swiper {
+    padding-bottom: 50px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+    width: 70px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .swiper-pagination {
+    bottom: 5px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.7;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fe7743;
+  }
+`}</style>
+
+      </div>
+
+      <div className="gradient-divider"></div>
+
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
@@ -53,14 +371,19 @@ function App() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="projects-tech">
           <span className="tech">🚀 Tech Stack :</span>
-          <img src={csharp} alt="C#" />
-          <span className="projects-tech-text">C# ,</span>
-          <img src={sql} alt="SQL Server" />
-          <span className="projects-tech-text">SQL</span>
-          <div
-            className="responsive-project-chip"
-            style={{ marginLeft: "31rem" }}
-          >
+          <div className="tech-children-cont-spec">
+              <div className="tech-children-cont-child">
+              <img src={csharp} alt="C#" className="projects-img"/>
+              <span className="projects-tech-text">C#</span>
+              <img src={sql} alt="SQL Server" className="projects-img"/>
+              <span className="projects-tech-text">SQL</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+          </div>
+
             <Chip
               icon={<GitHubIcon color="white" />}
               clickable
@@ -141,127 +464,6 @@ function App() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={sql1} style={imgStyle} />
-          </SwiperSlide>
-        </Swiper>
-        <style>{`
-  .swiper {
-    padding-bottom: 50px !important;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: white !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    z-index: 10 !important;
-    width: 70px !important;
-    height: 40px !important;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .swiper-pagination {
-    bottom: 5px !important;
-  }
-
-  .swiper-pagination-bullet {
-    background: white;
-    opacity: 0.7;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #fe7743;
-  }
-`}</style>
-      </div>
-      <div className="gradient-divider"></div>
-
-      <div className="projects-desc-cont-parent">
-        <div className="projects-desc-cont">
-          <p>
-            <span className="projects-header-text">Website App</span>
-            <br></br>
-            <span>Project Name :</span>
-            <br></br> E-Commerce Site <br></br>
-            <span>Project Purpose :</span>
-            <br></br> The purpose of this project is to develop a user-friendly
-            and visually appealing e-commerce website where users can browse,
-            and purchase various fashion and lifestyle products. The platform
-            aims to provide a seamless shopping experience with product details
-            and pricing information.
-          </p>
-        </div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="projects-tech">
-          <span className="tech">🚀 Tech Stack :</span>
-          <img src={react} alt="React" />
-          <span className="projects-tech-text"> React ,</span>
-          <img src={js} alt="JavaScript" />
-          <span className="projects-tech-text"> JavaScript</span>
-          <div
-            className="responsive-project-chip"
-            style={{ marginLeft: "23rem" }}
-          >
-            <Chip
-              icon={<GitHubIcon color="white" />}
-              clickable
-              onClick={() =>
-                window.open(
-                  "https://github.com/ulasaylar/react_shoppingSite",
-                  "_blank"
-                )
-              }
-              size="small"
-              label="GitHub"
-              sx={{
-                color: "white",
-                width: 100,
-                fontSize: 16,
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#4d4d4d",
-                  color: "white",
-                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
-                  transform: "scale(1.05)",
-                  cursor: "pointer",
-                },
-              }}
-              variant="filled"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="responsive-project-swiper-cont"
-        style={{
-          width: "50vw",
-          margin: "50px auto",
-          position: "relative",
-        }}
-      >
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          loop={true}
-          navigation={true}
-          pagination={{ clickable: true }}
-          slidesPerView={1}
-        >
-          <SwiperSlide>
-            <img src={mainsite} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={detail} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={basket} style={imgStyle} />
           </SwiperSlide>
         </Swiper>
         <style>{`
