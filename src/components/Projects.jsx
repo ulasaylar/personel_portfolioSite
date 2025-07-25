@@ -74,7 +74,7 @@ function App() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="projects-tech">
-          <span className="tech">🚀 Tech Stack :</span>
+          <span className="tech">Tools & Frameworks</span>
           <div className="tech-children-cont-spec">
             <div className="tech-children-cont-child">
               <img src={nest} alt="Nest.js" className="projects-img"/>
@@ -114,6 +114,9 @@ function App() {
               }}
               variant="filled"
             />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">21/07/25</span>
           </div>
         </div>
       </div>
@@ -227,134 +230,6 @@ function App() {
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
           <p>
-            <span className="projects-header-text">Website App</span>
-            <br></br>
-            <span>Project Name :</span>
-            <br></br> E-Commerce Site <br></br>
-            <span>Project Purpose :</span>
-            <br></br> The purpose of this project is to develop a user-friendly
-            and visually appealing e-commerce website where users can browse,
-            and purchase various fashion and lifestyle products. The platform
-            aims to provide a seamless shopping experience with product details
-            and pricing information.
-          </p>
-        </div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="projects-tech">
-          <span className="tech">🚀 Tech Stack :</span>
-          <div className="tech-children-cont-spec">
-            <div className="tech-children-cont-child">
-              <img src={react} alt="React" className="projects-img"/>
-              <span className="projects-tech-text"> React</span>
-              <img src={js} alt="JavaScript" className="projects-img"/>
-              <span className="projects-tech-text"> JavaScript</span>
-            </div>
-
-            <div
-            className="responsive-project-chip"
-            >
-          </div>
-
-            <Chip
-              icon={<GitHubIcon color="white" />}
-              clickable
-              onClick={() =>
-                window.open(
-                  "https://github.com/ulasaylar/react_shoppingSite",
-                  "_blank"
-                )
-              }
-              size="small"
-              label="GitHub"
-              sx={{
-                color: "white",
-                width: 100,
-                fontSize: 16,
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#4d4d4d",
-                  color: "white",
-                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
-                  transform: "scale(1.05)",
-                  cursor: "pointer",
-                },
-              }}
-              variant="filled"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="responsive-project-swiper-cont"
-        style={{
-          width: "50vw",
-          margin: "50px auto",
-          position: "relative",
-        }}
-      >
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          loop={true}
-          navigation={true}
-          pagination={{ clickable: true }}
-          slidesPerView={1}
-        >
-          <SwiperSlide>
-            <img src={mainsite} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={detail} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={basket} style={imgStyle} />
-          </SwiperSlide>
-        </Swiper>
-        <style>{`
-  .swiper {
-    padding-bottom: 50px !important;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: white !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    z-index: 10 !important;
-    width: 70px !important;
-    height: 40px !important;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .swiper-pagination {
-    bottom: 5px !important;
-  }
-
-  .swiper-pagination-bullet {
-    background: white;
-    opacity: 0.7;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #fe7743;
-  }
-`}</style>
-
-      </div>
-
-      <div className="gradient-divider"></div>
-
-      <div className="projects-desc-cont-parent">
-        <div className="projects-desc-cont">
-          <p>
             <span className="projects-header-text">Desktop App</span>
             <br></br>
             <span>Project Name :</span>
@@ -370,7 +245,7 @@ function App() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="projects-tech">
-          <span className="tech">🚀 Tech Stack :</span>
+          <span className="tech">Tools & Frameworks</span>
           <div className="tech-children-cont-spec">
               <div className="tech-children-cont-child">
               <img src={csharp} alt="C#" className="projects-img"/>
@@ -410,6 +285,9 @@ function App() {
               }}
               variant="filled"
             />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">04/05/25</span>
           </div>
         </div>
       </div>
@@ -502,6 +380,137 @@ function App() {
     background: #fe7743;
   }
 `}</style>
+      </div>
+
+      <div className="gradient-divider"></div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> E-Commerce Site <br></br>
+            <span>Project Purpose :</span>
+            <br></br> The purpose of this project is to develop a user-friendly
+            and visually appealing e-commerce website where users can browse,
+            and purchase various fashion and lifestyle products. The platform
+            aims to provide a seamless shopping experience with product details
+            and pricing information.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child">
+              <img src={react} alt="React" className="projects-img"/>
+              <span className="projects-tech-text"> React</span>
+              <img src={js} alt="JavaScript" className="projects-img"/>
+              <span className="projects-tech-text"> JavaScript</span>
+            </div>
+
+            <div
+            className="responsive-project-chip"
+            >
+          </div>
+
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/react_shoppingSite",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">24/03/25</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={mainsite} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={detail} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={basket} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+  .swiper {
+    padding-bottom: 50px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+    width: 70px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .swiper-pagination {
+    bottom: 5px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.7;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fe7743;
+  }
+`}</style>
+
       </div>
     </>
   );
