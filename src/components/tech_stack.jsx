@@ -8,6 +8,7 @@ import php from "../img/php.png";
 import java from "../img/java.png";
 import nest from "../img/nest.png";
 import mongo from "../img/mongodb.png";
+import laravel from "../img/laravel.jpeg";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 
@@ -62,7 +63,13 @@ const TechStack = () => {
             </LightTooltip>
           </li>
         </div>
-
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="Laravel">
+              <img className="tech-img" src={laravel} alt="Laravel" />
+            </LightTooltip>
+          </li>
+        </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
             <LightTooltip title="Python">
@@ -79,15 +86,15 @@ const TechStack = () => {
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <LightTooltip title="Php">
-              <img className="tech-img" src={php} alt="Php" />
+            <LightTooltip title="PHP">
+              <img className="tech-img" src={php} alt="PHP" />
             </LightTooltip>
           </li>
         </div>
         <div className="tech-li-container">
           <li className="tech-li-items">
-            <LightTooltip title="Sql">
-              <img id="sql-img" className="tech-img" src={sql} alt="Sql" />
+            <LightTooltip title="SQL">
+              <img id="sql-img" className="tech-img" src={sql} alt="SQL" />
             </LightTooltip>
           </li>
         </div>
