@@ -26,7 +26,6 @@ import mongo from "../img/mongodb.png";
 import js from "../img/js.png";
 import sql from "../img/sql.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import nest1 from "../img/projects/nestjs/1.png";
 import nest2 from "../img/projects/nestjs/2.png";
 import nest3 from "../img/projects/nestjs/3.png";
 import nest4 from "../img/projects/nestjs/4.png";
@@ -34,10 +33,8 @@ import nest5 from "../img/projects/nestjs/5.png";
 import nest6 from "../img/projects/nestjs/6.png";
 import nest7 from "../img/projects/nestjs/7.png";
 import nest8 from "../img/projects/nestjs/8.png";
-import nest9 from "../img/projects/nestjs/9.png";
 import nest10 from "../img/projects/nestjs/10.png";
 import nest11 from "../img/projects/nestjs/11.png";
-import nest12 from "../img/projects/nestjs/12.png";
 import nest13 from "../img/projects/nestjs/mongo1.png";
 import nest14 from "../img/projects/nestjs/mongo2.png";
 import nest15 from "../img/projects/nestjs/mongo3.png";
@@ -292,9 +289,6 @@ function App() {
           slidesPerView={1}
         >
           <SwiperSlide>
-            <img src={nest1} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={nest2} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
@@ -316,16 +310,10 @@ function App() {
             <img src={nest8} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={nest9} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={nest10} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={nest11} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={nest12} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={nest13} style={imgStyle} />
