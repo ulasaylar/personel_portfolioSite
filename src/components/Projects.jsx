@@ -50,11 +50,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { autocompleteClasses } from "@mui/material";
+import CustomCvChips from "./viewCv";
 
 function App() {
   return (
     <>
-      <div className="gradient-divider"></div>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "3rem" }}>
+        <CustomCvChips />
+      </div>
+      <div className="gradient-divider" style={{ marginTop: "4rem" }}></div>
       <div className="projects-title" id="projects-banner">
         PROJECTS
       </div>

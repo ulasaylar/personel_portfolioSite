@@ -5,10 +5,25 @@ import github from "../img/github.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
 function CommunicationNav() {
+  const LightTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: theme.palette.common.white,
+      color: "rgba(0, 0, 0, 0.87)",
+      boxShadow: theme.shadows[1],
+      fontSize: 14,
+    },
+  }));
+
   return (
-    <div className="main-cont">
+    <div className="main-cont" style={{ flexDirection: "column" }}>
       <div className="chip-cont">
         <div className="chip-items">
           <Chip
@@ -85,6 +100,28 @@ function CommunicationNav() {
             variant="filled"
           />
         </div>
+      </div>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center", marginTop: "2rem" }}>
+        <LightTooltip title="ulasaylar@gmail.com">
+          <Button
+            variant="outlined"
+            startIcon={<MailOutlineIcon />}
+            onClick={() => (window.location.href = "mailto:ulasaylar@gmail.com")}
+            sx={{
+              textTransform: "none",
+              fontSize: "1.4rem",
+              border: "2px solid #17d3c3ff",
+              borderRadius: "1rem",
+              color: "#17d3c3ff",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                transform: "scale(1.04)",
+              },
+            }}
+          >
+            Send Mail
+          </Button>
+        </LightTooltip>
       </div>
     </div>
   );
