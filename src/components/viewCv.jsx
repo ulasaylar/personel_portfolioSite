@@ -4,7 +4,7 @@ import FileOpenIcon from '@mui/icons-material/FileOpen';
 
 export default function CustomCvChips() {
     const handleClick = () => {
-        const pdfUrl = "/ulas_cv.pdf";
+        const pdfUrl = "/ulas_cv2.pdf";
         const faviconUrl = "/PDF_ico.ico";
         const newWindow = window.open();
         if (newWindow) {

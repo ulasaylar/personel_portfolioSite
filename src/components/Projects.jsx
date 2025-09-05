@@ -149,7 +149,7 @@ function App() {
           slidesPerView={1}
         >
           <SwiperSlide>
-            <img src={bank1} style={imgStyle} />
+            <img src={bank9} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={bank3} style={imgStyle} />
@@ -173,7 +173,7 @@ function App() {
             <img src={bank8} style={imgStyle} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={bank9} style={imgStyle} />
+            <img src={bank1} style={imgStyle} />
           </SwiperSlide>
         </Swiper>
         <style>{`
