@@ -46,6 +46,8 @@ import bank4 from "../img/projects/banktree/bank-4.png";
 import bank5 from "../img/projects/banktree/bank-5.png";
 import bank6 from "../img/projects/banktree/bank-6.png";
 import bank7 from "../img/projects/banktree/bank-7.png";
+import bank8 from "../img/projects/banktree/bank-8.png";
+import bank9 from "../img/projects/banktree/bank-9.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -166,6 +168,12 @@ function App() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={bank7} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={bank8} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={bank9} style={imgStyle} />
           </SwiperSlide>
         </Swiper>
         <style>{`
