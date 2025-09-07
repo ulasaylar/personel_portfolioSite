@@ -1,30 +1,14 @@
 import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
+import { useNavigate } from 'react-router-dom';
 
 export default function CustomCvChips() {
+    const navigate = useNavigate();
+
     const handleClick = () => {
-        const pdfUrl = "/ulas_cv2.pdf";
-        const faviconUrl = "/PDF_ico.ico";
-        const newWindow = window.open();
-        if (newWindow) {
-            newWindow.document.title = "Ulaş Aylar - CV";
-
-            const link = newWindow.document.createElement("link");
-            link.rel = "icon";
-            link.href = faviconUrl;
-            newWindow.document.head.appendChild(link);
-
-            const iframe = newWindow.document.createElement("iframe");
-            iframe.src = pdfUrl;
-            iframe.width = "100%";
-            iframe.height = "100%";
-            iframe.style.border = "none";
-            newWindow.document.body.style.margin = "0";
-            newWindow.document.body.appendChild(iframe);
-        }
+        navigate("/cv");
     };
-
 
     return (
         <Chip
