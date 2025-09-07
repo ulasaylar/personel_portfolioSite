@@ -327,18 +327,6 @@ function App() {
           <SwiperSlide>
             <img src={nest11} style={imgStyle} />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src={nest13} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={nest14} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={nest15} style={imgStyle} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={nest16} style={imgStyle} />
-          </SwiperSlide>
         </Swiper>
         <style>{`
         .swiper {

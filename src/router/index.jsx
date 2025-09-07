@@ -13,7 +13,7 @@ import About_me from "../components/About_me.jsx";
 import ParticlesBackground from "../components/ParticlesBackground.jsx";
 import CommunicationNav from "../components/CommunicationNav.jsx";
 import Projects from "../components/Projects.jsx";
-import { BrowserRouter, Routes, Route, } from "react-router";
+import { HashRouter, Routes, Route, } from "react-router";
 
 function CvPage() {
     return (
@@ -47,12 +47,12 @@ function HomePage() {
 
 function Router() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/cv" element={<CvPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
