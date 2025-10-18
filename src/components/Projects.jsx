@@ -26,6 +26,7 @@ import mongo from "../img/mongodb.png";
 import js from "../img/js.png";
 import sql from "../img/sql.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import nest2 from "../img/projects/nestjs/2.png";
 import nest3 from "../img/projects/nestjs/3.png";
 import nest4 from "../img/projects/nestjs/4.png";
@@ -35,10 +36,9 @@ import nest7 from "../img/projects/nestjs/7.png";
 import nest8 from "../img/projects/nestjs/8.png";
 import nest10 from "../img/projects/nestjs/10.png";
 import nest11 from "../img/projects/nestjs/11.png";
-import nest13 from "../img/projects/nestjs/mongo1.png";
-import nest14 from "../img/projects/nestjs/mongo2.png";
-import nest15 from "../img/projects/nestjs/mongo3.png";
-import nest16 from "../img/projects/nestjs/mongo4.png";
+import blogai1 from "../img/projects/nestjs/blogai1.png";
+import blogai2 from "../img/projects/nestjs/blogai2.png";
+import blogai3 from "../img/projects/nestjs/blogai3.png";
 import bank1 from "../img/projects/banktree/bank-1.png";
 import bank2 from "../img/projects/banktree/bank-2.png";
 import bank3 from "../img/projects/banktree/bank-3.png";
@@ -48,6 +48,14 @@ import bank6 from "../img/projects/banktree/bank-6.png";
 import bank7 from "../img/projects/banktree/bank-7.png";
 import bank8 from "../img/projects/banktree/bank-8.png";
 import bank9 from "../img/projects/banktree/bank-9.png";
+import ekobul1 from "../img/projects/ekobul/ekobul1.png";
+import ekobul2 from "../img/projects/ekobul/ekobul2.png";
+import ekobul3 from "../img/projects/ekobul/ekobul3.png";
+import ekobul4 from "../img/projects/ekobul/ekobul4.png";
+import ekobul5 from "../img/projects/ekobul/ekobul5.png";
+import ekobul6 from "../img/projects/ekobul/ekobul6.png";
+import ekobul7 from "../img/projects/ekobul/ekobul7.png";
+import ekobul8 from "../img/projects/ekobul/ekobul8.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -64,6 +72,259 @@ function App() {
       <div className="projects-title" id="projects-banner">
         PROJECTS
       </div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> EkoBul <br></br>
+            <span>Project Purpose :</span>
+            <br></br> The purpose of this project is to develop a modern and interactive social networking platform designed for Izmir University of Economics students to connect in an anonymous and engaging way.
+            <br /><br />
+            The platform allows users to leave anonymous notes containing details such as date, time, and location, which other users can browse and respond to by sending connection requests.
+            Each note owner can view the social media profiles of users who send requests and has the option to accept or decline them. Upon mutual approval, both users’ social media information becomes visible to each other under the “matched notes” section, creating a unique and meaningful connection experience.
+            <br /><br />
+            The system also includes features such as favoriting notes, rejecting requests (preventing access to the note owner’s information), and a filter system that enables users to search notes by specific date or location when the number of notes increases.
+            Overall, the platform aims to provide a safe, intuitive, and fun environment for students to meet, interact, and form new connections based on shared experiences or interests.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child">
+              <img src={nest} alt="Nest.js" className="projects-img" />
+              <span className="projects-tech-text"> Nest.js</span>
+              <img src={mysql} alt="MySQL" className="projects-img" />
+              <span className="projects-tech-text"> MySQL</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+            </div>
+
+            <Chip
+              icon={<OpenInNewIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://ekobul.com.tr",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="Live"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#b18c1562",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(0, 0, 0, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">17/10/25</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={ekobul1} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul2} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul3} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul4} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul5} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul6} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul7} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ekobul8} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+        </style>
+      </div>
+
+      <div className="gradient-divider"></div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> Blog AI - Customer Site <br></br>
+            <span>Project Purpose :</span>
+            <br></br> This project represents the user-facing side of the Blog AI platform, designed with React to help customers effortlessly generate AI-driven blog content. It integrates seamlessly with the existing NestJS + MongoDB backend, utilizing the JWT-based authentication system implemented in the admin dashboard project to ensure secure and reliable access.
+            <br /><br />
+            Users can subscribe to monthly packages, which determine their usage limits and feature access. Within the platform, users can enter specific topic titles and keywords, from which the AI engine analyzes and generates complete, contextually rich blog articles.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child">
+              <img src={nest} alt="Nest.js" className="projects-img" />
+              <span className="projects-tech-text"> Nest.js</span>
+              <img src={react} alt="React" className="projects-img" />
+              <span className="projects-tech-text"> React</span>
+              <img src={mongo} alt="MongoDB" className="projects-img" />
+              <span className="projects-tech-text"> MongoDB</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+            </div>
+
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">08/09/25</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={blogai1} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={blogai2} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={blogai3} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+        </style>
+      </div>
+
+      <div className="gradient-divider"></div>
 
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
@@ -100,32 +361,7 @@ function App() {
             >
             </div>
 
-            <Chip
-              icon={<GitHubIcon color="white" />}
-              clickable
-              onClick={() =>
-                window.open(
-                  "https://github.com/ulasaylar",
-                  "_blank"
-                )
-              }
-              size="small"
-              label="GitHub"
-              sx={{
-                color: "white",
-                width: 100,
-                fontSize: 16,
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#4d4d4d",
-                  color: "white",
-                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
-                  transform: "scale(1.05)",
-                  cursor: "pointer",
-                },
-              }}
-              variant="filled"
-            />
+
           </div>
           <div className="tech-date-cont">
             <span className="span-date">Date :</span> <span className="span-date-num">29/08/25</span>
@@ -252,32 +488,6 @@ function App() {
             >
             </div>
 
-            <Chip
-              icon={<GitHubIcon color="white" />}
-              clickable
-              onClick={() =>
-                window.open(
-                  "https://github.com/ulasaylar",
-                  "_blank"
-                )
-              }
-              size="small"
-              label="GitHub"
-              sx={{
-                color: "white",
-                width: 100,
-                fontSize: 16,
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#4d4d4d",
-                  color: "white",
-                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
-                  transform: "scale(1.05)",
-                  cursor: "pointer",
-                },
-              }}
-              variant="filled"
-            />
           </div>
           <div className="tech-date-cont">
             <span className="span-date">Date :</span> <span className="span-date-num">21/07/25</span>
