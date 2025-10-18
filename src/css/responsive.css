@@ -62,6 +62,7 @@
     line-height: 2.5rem;
     text-align: center;
   }
+
   .tech-h1 {
     margin: 5rem 0 2rem 0;
     font-size: 3.5rem;
@@ -164,6 +165,7 @@
     width: 90vw !important;
     height: auto !important;
   }
+
   .swiper-slide img {
     width: 100% !important;
     height: auto !important;
@@ -175,8 +177,12 @@
     display: flex !important;
     justify-content: center !important;
   }
-  
+
   .tech-children-cont-spec {
+    flex-direction: column;
+  }
+
+  .spec-flex-column-resp {
     flex-direction: column;
   }
 }

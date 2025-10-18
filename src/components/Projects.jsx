@@ -239,7 +239,7 @@ function App() {
         <div className="projects-tech">
           <span className="tech">Tools & Frameworks</span>
           <div className="tech-children-cont-spec">
-            <div className="tech-children-cont-child">
+            <div className="tech-children-cont-child spec-flex-column-resp">
               <img src={nest} alt="Nest.js" className="projects-img" />
               <span className="projects-tech-text"> Nest.js</span>
               <img src={react} alt="React" className="projects-img" />
