@@ -56,6 +56,22 @@ import ekobul5 from "../img/projects/ekobul/ekobul5.png";
 import ekobul6 from "../img/projects/ekobul/ekobul6.png";
 import ekobul7 from "../img/projects/ekobul/ekobul7.png";
 import ekobul8 from "../img/projects/ekobul/ekobul8.png";
+import cine1 from "../img/projects/cinemaworld/cine1.png";
+import cine2 from "../img/projects/cinemaworld/cine2.png";
+import cine3 from "../img/projects/cinemaworld/cine3.png";
+import cine4 from "../img/projects/cinemaworld/cine4.png";
+import cine5 from "../img/projects/cinemaworld/cine5.png";
+import cine6 from "../img/projects/cinemaworld/cine6.png";
+import cine7 from "../img/projects/cinemaworld/cine7.png";
+import cine8 from "../img/projects/cinemaworld/cine8.png";
+import cine9 from "../img/projects/cinemaworld/cine9.png";
+import cine10 from "../img/projects/cinemaworld/cine10.png";
+import butce1 from "../img/projects/butcem/butce1.jpeg";
+import butce2 from "../img/projects/butcem/butce2.jpeg";
+import butce3 from "../img/projects/butcem/butce3.jpeg";
+import butce4 from "../img/projects/butcem/butce4.jpeg";
+import butce5 from "../img/projects/butcem/butce5.jpeg";
+import butce6 from "../img/projects/butcem/butce6.jpeg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -72,6 +88,303 @@ function App() {
       <div className="projects-title" id="projects-banner">
         PROJECTS
       </div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Mobile App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> My Budget <br></br>
+            <span>Project Purpose :</span>
+            <br></br> It was a great project for me to gain insights into mobile app development and improve my skills. Developed using React Native on the frontend and Laravel on the backend, I aimed to provide users with the simplest way to track their income and expenses.
+            <br /><br />
+            On the technical side, I built a robust architecture for data security:
+            <br />
+            I used MySQL for database management.
+            <br />
+            Implemented Laravel Sanctum and Personal Access Tokens for secure authentication.
+            <br />
+            Thanks to this structure, every user's financial transactions are stored privately and isolated within the database.
+            <br /><br />
+            I also successfully handled API integrations, Axios configuration, and dynamic theme management.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child spec-flex-column-resp">
+              <img src={react} alt="React Native" className="projects-img" />
+              <span className="projects-tech-text"> React Native</span>
+              <img src={laravel} alt="Laravel" className="projects-img" />
+              <span className="projects-tech-text"> Laravel</span>
+              <img src={mysql} alt="MySQL" className="projects-img" />
+              <span className="projects-tech-text"> MySQL</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+            </div>
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/ReactNative_BudgetPlannerApp",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">23/12/25</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={butce1} style={imgStyleMobil} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={butce2} style={imgStyleMobil} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={butce3} style={imgStyleMobil} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={butce4} style={imgStyleMobil} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={butce5} style={imgStyleMobil} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={butce6} style={imgStyleMobil} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+        </style>
+      </div>
+
+      <div className="gradient-divider"></div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> CinemaWorld <br></br>
+            <span>Project Purpose :</span>
+            <br></br> The purpose of this project was to develop a comprehensive and interactive web platform for cinema enthusiasts, utilizing the Laravel framework to ensure a robust, scalable, and maintainable application architecture. The platform is designed to offer a rich set of features, including user authentication, personalized movie tracking, social interaction through reviews, and a dedicated community forum.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child spec-flex-column-resp">
+              <img src={laravel} alt="Nest.js" className="projects-img" />
+              <span className="projects-tech-text"> Laravel</span>
+              <img src={js} alt="Javascript" className="projects-img" />
+              <span className="projects-tech-text"> Javascript</span>
+              <img src={mysql} alt="MySQL" className="projects-img" />
+              <span className="projects-tech-text"> MySQL</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+            </div>
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/CinemaWorld",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">19/12/25</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={cine1} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine2} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine3} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine4} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine5} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine6} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine7} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine8} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine9} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cine10} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+        </style>
+      </div>
+
+      <div className="gradient-divider"></div>
 
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
@@ -872,6 +1185,13 @@ function App() {
 const imgStyle = {
   width: "80%",
   height: "auto",
+  borderRadius: "3rem",
+  margin: "0 auto",
+  display: "block",
+};
+const imgStyleMobil = {
+  width: "22%",
+  height: "420px",
   borderRadius: "3rem",
   margin: "0 auto",
   display: "block",
