@@ -3,7 +3,7 @@ import React from "react";
 export default function CvPage() {
     return (
         <iframe
-            src="/ulas_cv3.pdf"
+            src="/ulasaylar_cv.pdf"
             title="Ulaş Aylar - CV"
             style={{
                 width: "100%",
