@@ -19,7 +19,7 @@ function CvPage() {
     return (
         <div style={{ margin: 0, padding: 0, width: "100vw", height: "100vh", overflow: "hidden" }}>
             <iframe
-                src="/ulas_cv4.pdf"
+                src="/ulasaylar_cv.pdf"
                 title="Ulaş Aylar - CV"
                 style={{
                     width: "100%",
