@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
@@ -105,7 +106,7 @@ function CommunicationNav() {
         <LightTooltip title="ulasaylar@gmail.com">
           <Button
             variant="outlined"
-            startIcon={<MailOutlineIcon />}
+            startIcon={<KeyboardDoubleArrowDownIcon />}
             onClick={() => document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" })}
             sx={{
               textTransform: "none",
@@ -119,7 +120,7 @@ function CommunicationNav() {
               },
             }}
           >
-            Send Mail
+            Send me an email
           </Button>
         </LightTooltip>
       </div>

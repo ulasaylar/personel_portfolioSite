@@ -44,14 +44,14 @@ function Contact() {
   return (
     <section id="contact-section" className="contact-section">
       <div className="contact-title-wrap">
-        <span className="contact-title-bg">İLETİŞİM</span>
-        <span className="contact-title-fg">İletişim</span>
+        <span className="contact-title-bg">CONTACT</span>
+        <span className="contact-title-fg">feel free</span>
       </div>
 
       <div className="contact-links">
         <a className="contact-link-item" href="mailto:ulasaylar@gmail.com">
           <MailOutlineIcon style={{ fontSize: "2.6rem" }} />
-          <span>E-POSTA</span>
+          <span>EMAIL</span>
         </a>
         <a
           className="contact-link-item"
@@ -60,7 +60,7 @@ function Contact() {
           rel="noreferrer"
         >
           <LinkedInIcon style={{ fontSize: "2.6rem" }} />
-          <span>LİNKEDİN</span>
+          <span>LINKEDIN</span>
         </a>
         <a
           className="contact-link-item"
@@ -69,7 +69,7 @@ function Contact() {
           rel="noreferrer"
         >
           <GitHubIcon style={{ fontSize: "2.6rem" }} />
-          <span>GİTHUB</span>
+          <span>GITHUB</span>
         </a>
       </div>
 
@@ -77,45 +77,45 @@ function Contact() {
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-field">
-          <label htmlFor="cf-name">ADINIZ</label>
+          <label htmlFor="cf-name">YOUR NAME</label>
           <input
             id="cf-name"
             name="name"
             type="text"
-            placeholder="Adınız Soyadınız"
+            placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="contact-field">
-          <label htmlFor="cf-email">E-POSTA</label>
+          <label htmlFor="cf-email">EMAIL</label>
           <input
             id="cf-email"
             name="email"
             type="email"
-            placeholder="ornek@email.com"
+            placeholder="your.email@example.com"
             value={form.email}
             onChange={handleChange}
             required
           />
         </div>
         <div className="contact-field">
-          <label htmlFor="cf-message">MESAJ</label>
+          <label htmlFor="cf-message">MESSAGE</label>
           <textarea
             id="cf-message"
             name="message"
-            placeholder="Merhaba Ulaş..."
+            placeholder="Hello Ulaş..."
             value={form.message}
             onChange={handleChange}
             required
           />
         </div>
         <button className="contact-submit" type="submit" disabled={status === "sending"}>
-          {status === "sending" ? "GÖNDERİLİYOR..." : "GÖNDER →"}
+          {status === "sending" ? "SENDING..." : "SEND →"}
         </button>
-        {status === "sent" && <p className="contact-toast contact-toast--ok">✓ Mesajınız başarıyla gönderildi!</p>}
-        {status === "error" && <p className="contact-toast contact-toast--err">✗ Bir hata oluştu, tekrar deneyin.</p>}
+        {status === "sent" && <p className="contact-toast contact-toast--ok">✓ Your message has been sent successfully!</p>}
+        {status === "error" && <p className="contact-toast contact-toast--err">✗ An error occurred, please try again.</p>}
       </form>
     </section>
   );
