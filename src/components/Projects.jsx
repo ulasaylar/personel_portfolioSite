@@ -81,7 +81,7 @@ import CustomCvChips from "./viewCv";
 function App() {
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "3rem" }}>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
         <CustomCvChips />
       </div>
       <div className="gradient-divider" style={{ marginTop: "4rem" }}></div>
