@@ -22,7 +22,7 @@
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.07);
+  -webkit-text-stroke: 1px #fe7743;
   user-select: none;
   letter-spacing: 0.06em;
   line-height: 1;
