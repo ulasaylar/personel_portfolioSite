@@ -106,7 +106,7 @@ function CommunicationNav() {
           <Button
             variant="outlined"
             startIcon={<MailOutlineIcon />}
-            onClick={() => (window.location.href = "mailto:ulasaylar@gmail.com")}
+            onClick={() => document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" })}
             sx={{
               textTransform: "none",
               fontSize: "1.4rem",

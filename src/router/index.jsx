@@ -13,6 +13,8 @@ import About_me from "../components/About_me.jsx";
 import ParticlesBackground from "../components/ParticlesBackground.jsx";
 import CommunicationNav from "../components/CommunicationNav.jsx";
 import Projects from "../components/Projects.jsx";
+import Contact from "../components/Contact.jsx";
+import "../css/contact.css";
 import { HashRouter, Routes, Route, } from "react-router";
 
 function CvPage() {
@@ -41,6 +43,7 @@ function HomePage() {
             <About_me />
             <Tech_Stack />
             <Projects />
+            <Contact />
         </>
     );
 }
