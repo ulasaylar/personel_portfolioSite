@@ -25,6 +25,8 @@ import nest from "../img/nest.png";
 import mongo from "../img/mongodb.png";
 import js from "../img/js.png";
 import sql from "../img/sql.png";
+import aspnet from "../img/aspnet.png";
+import vue from "../img/vuejs.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import nest2 from "../img/projects/nestjs/2.png";
@@ -72,6 +74,9 @@ import butce3 from "../img/projects/butcem/butce3.jpeg";
 import butce4 from "../img/projects/butcem/butce4.jpeg";
 import butce5 from "../img/projects/butcem/butce5.jpeg";
 import butce6 from "../img/projects/butcem/butce6.jpeg";
+import todo1 from "../img/projects/todolist/todo1.png";
+import todo2 from "../img/projects/todolist/todo2.png";
+import todo3 from "../img/projects/todolist/todo3.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -88,6 +93,143 @@ function App() {
       <div className="projects-title" id="projects-banner">
         PROJECTS
       </div>
+
+      <div className="projects-desc-cont-parent">
+        <div className="projects-desc-cont">
+          <p>
+            <span className="projects-header-text">Website App</span>
+            <br></br>
+            <span>Project Name :</span>
+            <br></br> To Do List <br></br>
+            <span>Project Purpose :</span>
+            <br></br> A full-stack Task Management application developed using Vue 3 (Composition API) on the frontend and ASP.NET Core Web API on the backend.
+            The project implements JWT-based authentication to provide secure, user-specific access to data and follows a clean layered architecture with separation between controllers, services,
+            and data access logic.
+            <br></br> <br></br>
+            Entity Framework Core is used for relational data modeling, where users, tasks, and categories are structured with proper relationships to ensure scalability and data integrity.
+            The application allows users to create and manage tasks with priorities, due dates, and category assignments, as well as filter tasks by status such as active, completed, and overdue.
+            <br></br><br></br>
+            On the frontend, state management is handled with Pinia, and Axios is used for API communication, while toast notifications provide real-time user feedback for key actions.
+            <br></br><br></br>
+            The overall system focuses on clean architecture principles, maintainability, and a smooth user experience.
+          </p>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="projects-tech">
+          <span className="tech">Tools & Frameworks</span>
+          <div className="tech-children-cont-spec">
+            <div className="tech-children-cont-child spec-flex-column-resp">
+              <img src={vue} alt="Vue.js" className="projects-img" />
+              <span className="projects-tech-text"> Vue.js</span>
+              <img src={aspnet} alt="ASP.NET Core" className="projects-img" />
+              <span className="projects-tech-text"> ASP.NET</span>
+              <img src={mysql} alt="MySQL" className="projects-img" />
+              <span className="projects-tech-text"> MySQL</span>
+            </div>
+
+            <div
+              className="responsive-project-chip"
+            >
+            </div>
+            <Chip
+              icon={<GitHubIcon color="white" />}
+              clickable
+              onClick={() =>
+                window.open(
+                  "https://github.com/ulasaylar/ToDoList_UI",
+                  "_blank"
+                )
+              }
+              size="small"
+              label="GitHub"
+              sx={{
+                color: "white",
+                width: 100,
+                fontSize: 16,
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#4d4d4d",
+                  color: "white",
+                  boxShadow: "0 0 8px rgba(25, 118, 210, 0.7)",
+                  transform: "scale(1.05)",
+                  cursor: "pointer",
+                },
+              }}
+              variant="filled"
+            />
+          </div>
+          <div className="tech-date-cont">
+            <span className="span-date">Date :</span> <span className="span-date-num">02/06/26</span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="responsive-project-swiper-cont"
+        style={{
+          width: "50vw",
+          margin: "50px auto",
+          position: "relative",
+        }}
+      >
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src={todo1} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={todo2} style={imgStyle} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={todo3} style={imgStyle} />
+          </SwiperSlide>
+        </Swiper>
+        <style>{`
+        .swiper {
+          padding-bottom: 50px !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white !important;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          z-index: 10 !important;
+          width: 70px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .swiper-pagination {
+          bottom: 5px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: #fe7743;
+        }
+      `}
+        </style>
+      </div>
+
+      <div className="gradient-divider"></div>
 
       <div className="projects-desc-cont-parent">
         <div className="projects-desc-cont">
