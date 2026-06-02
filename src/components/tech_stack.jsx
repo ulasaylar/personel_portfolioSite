@@ -9,6 +9,8 @@ import java from "../img/java.png";
 import nest from "../img/nest.png";
 import mongo from "../img/mongodb.png";
 import laravel from "../img/laravel.jpeg";
+import aspnet from "../img/aspnet.png";
+import vue from "../img/vuejs.png";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 
@@ -67,6 +69,20 @@ const TechStack = () => {
           <li className="tech-li-items">
             <LightTooltip title="Laravel">
               <img className="tech-img" src={laravel} alt="Laravel" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="Vue.js">
+              <img className="tech-img" src={vue} alt="Vue.js" />
+            </LightTooltip>
+          </li>
+        </div>
+        <div className="tech-li-container">
+          <li className="tech-li-items">
+            <LightTooltip title="ASP.NET">
+              <img className="tech-img" src={aspnet} alt="ASP.NET" />
             </LightTooltip>
           </li>
         </div>
