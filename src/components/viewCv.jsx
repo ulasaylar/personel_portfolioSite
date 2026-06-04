@@ -97,7 +97,7 @@ export default function CvButtons() {
                 >
                     <MenuItem
                         onClick={() =>
-                            handleDownload("ulasaylar_cv.pdf")
+                            handleDownload("ulasaylar_cv_2.pdf")
                         }
                     >
                         <ListItemIcon>
@@ -117,7 +117,7 @@ export default function CvButtons() {
 
                     <MenuItem
                         onClick={() =>
-                            handleDownload("ulasaylar_cv_tr.pdf")
+                            handleDownload("ulasaylar_cv_tr_2.pdf")
                         }
                     >
                         <ListItemIcon>
